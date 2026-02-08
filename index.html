@@ -4,48 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <title>My second weather app</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button"/>
-      </form>
-    </header>
-    <main>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-button"
+            id="search-form-button"
+          />
+        </form>
+      </header>
+      <main>
         <div class="weather-app-data">
-      <div>
-        <h1 class="weather-app-city">London</h1>
-        <p class="weather-app-details">
-          Sunday 13:52 , cloudy conditions
-          <br />
-          Humidity:  <strong>73%</strong>, Wind: <strong>9 mph</strong>
-        </p>
-      </div>
-      <div class="weather-app-container">
-        <div class="weather-app-icon">🌥️ </div> 
-        <div class="weather-app-value">11</div>
-      <div class="weather-app-unit">℃ </div>
+          <div>
+            <h1 class="weather-app-city" id="city">London</h1>
+            <p class="weather-app-details">
+              Sunday 13:52 , cloudy conditions
+              <br />
+              Humidity: <strong>73%</strong>, Wind: <strong>9 mph</strong>
+            </p>
+          </div>
+          <div class="weather-app-container">
+            <div class="weather-app-icon">🌥️</div>
+            <div class="weather-app-value">11</div>
+            <div class="weather-app-unit">℃</div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Gabcii" target="_blank"
+          >Gabriella Derzsi
+        </a>
+        and hosted on
+        <a
+          href="https://github.com/Gabcii/my-second-weather-app"
+          target="_blank"
+        >
+          Github</a
+        >
+        and on
+        <a href="https://my-second-weather-app.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/javascript.js"></script>
   </body>
-  <footer>
-    This project was coded by
-    <a href="https://github.com/Gabcii" target="_blank">Gabriella Derzsi </a>
-    and hosted on
-    <a href="https://github.com/Gabcii/my-second-weather-app" target="_blank">
-      Github</a
-    >
-    and on
-    <a href="https://my-second-weather-app.netlify.app/" target="_blank">
-      Netlify</a
-    >
-  </footer>
-  </div>
 </html>
