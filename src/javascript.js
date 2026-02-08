@@ -7,7 +7,9 @@ function refreshWeather(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector(".icon");
 
+  icon.innerHTML = ` <img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -16,8 +18,8 @@ function refreshWeather(response) {
   timeElement.innerHTML = formatDate(date);
 }
 function formatDate(date) {
-  let minutes = date.getMinutes;
-  let hours = date.getHours;
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
